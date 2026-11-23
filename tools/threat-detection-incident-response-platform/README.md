@@ -1,48 +1,36 @@
-# Threat Detection & Incident Response Platform
+# Threat Detection & Incident Response Platform (TDIR)
 
-[Repository home](../../README.md) · [Tool catalogue](../../docs/TOOL_CATALOGUE.md) · [Access and use](../../docs/ACCESS_AND_USE.md)
+**Responsible provider:** PRIVACT  
+**Documentation version:** 1.0 (November 2026)
 
-## 1. Overview
+## Overview
 
-**Provider:** PRIVACT
+The TDIR platform provides security monitoring and threat detection across endpoint and network activity. It collects and correlates events, enriches them with threat intelligence and asset context, and generates alerts for security analysts to investigate. Analysts work in the Security application in Kibana.
 
-**Service family:** Risk/Threat Monitoring & Cyberattack Management Services
+TDIR is a **detect-only** platform: it does not block traffic, isolate hosts, terminate processes or quarantine files.
 
-A proprietary service supporting monitoring, threat detection, investigation and incident-oriented analysis using network/endpoint activity and relevant security context. It supports alert prioritisation, investigation, attack-surface review and assessment of security controls.
+## User guide
 
-Technical reference: *AENAON Open Call #1 Technical Annex*, v1.0 (7 August 2026).
+[**Open the TDIR User Guide (PDF)**](TDIR_User_Guide.pdf)
 
-## 2. Potential Open Call use
+The user guide covers:
 
-Review authorised activity and prioritised alerts, document investigations and assess security controls within an approved project scope.
+1. About the platform and its data sources
+2. Signing in
+3. Overview and dashboards
+4. Hosts, network data and Discover
+5. Detection rules and MITRE ATT&CK coverage
+6. Alerts and alert status
+7. Investigating alerts using Timeline, Analyzer and network evidence
+8. Threat intelligence
+9. Asset context
+10. Cases and sharing investigation findings
+11. Analyst role and permissions
 
-## 3. Access and deployment
+## Access
 
-PRIVACT hosts and operates the platform. Beneficiaries receive controlled access to project-scoped workspaces. Self-managed deployment and source-code access are excluded; this is not a beneficiary installation package.
+Access to the platform requires a TDIR address and user credentials supplied by an authorised administrator. The guide explains how authorised users sign in and navigate the TDIR space in Kibana. Repository access does not itself grant platform access.
 
-## 4. Getting started
+## Documentation notes
 
-Agree project scope, data sources, authorised users and permitted activity with PRIVACT. Obtain prior authorisation before live operational monitoring. Arrange workspace access and applicable data-source instructions through onboarding; do not assume collectors, connectors or API specifications beyond those supplied for the agreed activity.
-
-## 5. Inputs and outputs
-
-- **Inputs:** Network/endpoint activity, threat intelligence and asset context.
-- **Outputs:** Alerts, monitoring dashboards, investigation records and reports.
-
-## 6. Interfaces and dependencies
-
-Controlled project-scoped workspace access is described. The provider confirms how authorised network/endpoint activity and security context are supplied. No public API, collector installation procedure or automated interface is specified by this catalogue.
-
-## 7. Documentation and resources
-
-The responsible provider (PRIVACT) supplies approved manuals, access instructions and technical resources where applicable to the authorised activity. Request current resources through the provider/project contact route below.
-
-## 8. Limitations and authorised use
-
-Live operational monitoring requires prior authorisation. The platform does not provide automated prevention/response or a 24/7 managed monitoring service. Self-managed deployment and source-code access are excluded. Workspace access does not authorise collection of arbitrary telemetry or operational response actions.
-
-Follow the applicable project, Open Call and provider terms. Repository documentation, hosted service access, API access and downloadable software are separate arrangements. Never commit credentials or sensitive operational information. See [access and use](../../docs/ACCESS_AND_USE.md).
-
-## 9. Support and updates
-
-PRIVACT is responsible for this tool's technical information and approved resources. Use your assigned project onboarding contact or [info@aenaon-project.eu](mailto:info@aenaon-project.eu) for routing to the provider. Provider updates are proposed through [pull requests for CILIX review and approval](../../CONTRIBUTING.md); only authorised CILIX staff merge approved changes.
+The user guide is Version 1.0, dated November 2026. Its screenshots use demonstration data. Check with the responsible provider before sharing or updating technical and access-related information.
